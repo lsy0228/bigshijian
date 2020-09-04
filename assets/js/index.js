@@ -34,7 +34,7 @@ $(function () {
     }
     // 渲染用户头像
     function renderAvatar(user) {
-        // 获取用户名称
+        // 获取用户名称,先获取用户自定义名，如没有在获取
         var name = user.nickname || user.username
         // 设置欢迎文本
         $('#welcome').html('欢迎&nbsp;&nbsp;' + name)
